@@ -196,10 +196,9 @@ html {
   padding: 40px;
 }
 
-/*Flip-card to be Implemented
    .card {
     height: 100%;
-    width: 100%;
+    min-width: 32%;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
@@ -220,7 +219,7 @@ html {
 
   .back {
     transform: rotateY(180deg);
-  } */
+  }
 
 .hamburger-menu {
   position: fixed;
