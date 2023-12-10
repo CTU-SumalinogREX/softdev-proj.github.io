@@ -271,8 +271,34 @@ html {
 }
 
 .menu-toggle:checked ~ .container .text {
-  transform: translateX(260px);
-  width: calc(100% - 460px);
+  transform: translateX(160px);
+  width: calc(100% - 160px);
+  margin-left: 2%;
+}
+
+.menu-toggle:checked ~ .container .text .monitor-content,
+.menu-toggle:checked ~ .container .text .mouse-content,
+.menu-toggle:checked ~ .container .text .printer-content,
+.menu-toggle:checked ~ .container .text .microphone-content,
+.menu-toggle:checked ~ .container .text .ram-content,
+.menu-toggle:checked ~ .container .text .hdd-content,
+.menu-toggle:checked ~ .container .text .sound-content,
+.menu-toggle:checked ~ .container .text .webcam-content {
+  max-width: 900px;
+  word-wrap: break-word;
+  margin-left: -200px;
+}
+
+.menu-toggle:checked ~ .container .text .keyboard-content,
+.menu-toggle:checked ~ .container .text .system-content,
+.menu-toggle:checked ~ .container .text .speaker-content,
+.menu-toggle:checked ~ .container .text .motherboard-content,
+.menu-toggle:checked ~ .container .text .gpu-content, 
+.menu-toggle:checked ~ .container .text .cpu-content,
+.menu-toggle:checked ~ .container .text .scanner-content {
+  max-width: 900px;
+  word-wrap: break-word;
+  margin-right: -200px;
 }
 
 .sidebar {
