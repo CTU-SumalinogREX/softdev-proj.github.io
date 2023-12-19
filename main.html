@@ -10,6 +10,7 @@
         <script src="https://kit.fontawesome.com/d3f11d88e4.js"></script>
     </head>
     <body>
+        <div id="preloader"></div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <label for="menu-toggle" class="hamburger-menu">
                 <i class="fas fa-bars"></i>
@@ -418,6 +419,28 @@
                     </div>
                 </div>
         </main>
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
         <script src="./mainscript.js"></script>
+        <script>
+            //preloader
+            var loader = document.getElementById("preloader");
+            
+            window.addEventListener("load", function (e) {
+                setTimeout(function () {
+                    loader.style.display = "none";
+                }, 700);
+            });
+        </script>
+        <script>
+            //cursor
+            var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+
+            document.addEventListener("mousemove", function (e) {
+                cursor.style.cssText = cursor2.style.cssText =
+                "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            });
+        </script>
     </body>
 </html>
